@@ -1,8 +1,10 @@
 <template>
   <div class="font-mono">
-    <ul class="flex flex-row border-solid	border-black border hover:border-slate-100"> 
-        <li class="flex-auto"><NuxtLink to="/">Index</NuxtLink></li>
-        <li class="flex-auto"><NuxtLink to="/about">About</NuxtLink></li>
+    <ul class="flex flex-row"> 
+        <NuxtLink class="flex-auto borer-solid	border-black border hover:border-slate-100" to="/"><li>Index</li></NuxtLink>
+        <NuxtLink class="flex-auto borer-solid	border-black border hover:border-slate-100" to="/about"><li>About Me</li></NuxtLink>
+        <NuxtLink class="flex-auto borer-solid	border-black border hover:border-slate-100" to="/APIfunctions"><li>api串接的小功能</li></NuxtLink>
+        <NuxtLink class="flex-auto borer-solid	border-black border hover:border-slate-100" to="/projects"><li>專案展示</li></NuxtLink>
     </ul>
     <!-- <NuxtRouteAnnouncer /> -->
     <!-- <NuxtWelcome /> -->
@@ -22,3 +24,7 @@
 <style>
 @import 'tailwindcss/tailwind.css';
 </style>
+
+<script setup>
+
+</script>
