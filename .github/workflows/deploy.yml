@@ -1,0 +1,31 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 這是你的分支名稱，通常是 'main' 或 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # 指定 Node.js 版本
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run generate  # 使用 nuxt generate 命令來生成靜態網站
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist  # Nuxt 打包後靜態資源的目錄
