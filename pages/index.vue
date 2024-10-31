@@ -3,6 +3,7 @@
 <template>
   <div>
     Page: index
+    <Section></Section>
   </div>
 </template>
 
