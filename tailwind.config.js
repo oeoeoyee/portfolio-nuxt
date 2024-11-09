@@ -32,6 +32,8 @@ export default {
           mainGreen: '#6F9385',
           ButtonGreen: '#A5D0CB',
           hoverGreen: '#95BAB6',
+          ButtonYellow: '#FEEDAB',
+          hoverYellow: '#EFE0A2',
           borderGery: '#808080',
         }
       }

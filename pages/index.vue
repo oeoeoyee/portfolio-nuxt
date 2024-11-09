@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
+  <div class="pb-20">
     Page: index
     <Section></Section>
   </div>

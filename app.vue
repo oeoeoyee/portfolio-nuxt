@@ -1,5 +1,5 @@
 <template>
-  <div class="font-mono bg-myColor-mainGreen h-screen">
+  <div class="font-mono bg-myColor-mainGreen">
     <Header></Header>
     <!-- <ul class="flex flex-row"> 
         <NuxtLink class="flex-auto borer-solid	border-black border hover:border-slate-100" to="/"><li>Index</li></NuxtLink>
