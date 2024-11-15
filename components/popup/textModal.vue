@@ -2,12 +2,12 @@
 <!-- 對話窗 -->
   <div 
     class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50" 
-    :class="{hidden:popupHidden}"
+    v-show="!popupHidden"
     id="modal"
->
+    >
     <div class="bg-white rounded-lg w-96 p-6">
       <div class="flex justify-between items-center">
-        <h2 class="text-xl font-semibold text-gray-800">標題</h2>
+        <h2 class="text-xl font-semibold text-gray-800">標題{{prop.popupHidden}}</h2>
         <button id="closeModal" @click="closeModel" class="text-gray-500 hover:text-gray-700">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -36,7 +36,7 @@
     })
 
     const emit = defineEmits(['popupHidden'])
-    const closeModel = () => {
+    const closeModel = () => {        
         emit("popupHidden", true)
     }
 </script>
