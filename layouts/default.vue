@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    Layout: default
+  <div class="min-h-screen">
+    <!-- Layout: default -->
     <slot />
   </div>
 </template>

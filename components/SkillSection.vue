@@ -9,7 +9,8 @@
             <!-- <button @click="clickName(item.skillName)">emit傳名字按鈕</button> -->
             <span 
                 v-for="(skillitem, itemIndex) in item.skillArr" 
-                class="inline-block text-l p-3 mr-3 mt-3 bg-myColor-ButtonGreen rounded-full"
+                class="inline-block text-l p-3 mr-3 mt-3 rounded-full"
+                :class="{'bg-myColor-ButtonYellow':index%2!==0, 'bg-myColor-ButtonGreen':index%2===0}"
                 :key="itemIndex"
             >
                 {{ skillitem }}

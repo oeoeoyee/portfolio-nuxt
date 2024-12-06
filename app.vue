@@ -10,8 +10,9 @@
     <!-- <NuxtRouteAnnouncer /> -->
     <!-- <NuxtWelcome /> -->
     <NuxtLayout>
-      <h1 class="text-6xl py-10">首頁/目錄</h1>
-      <p>本專案(應該會)使用 Vue3、Vite、Nuxt、TypeScript、tailwind、JavaScript、CSS、HTML</p>
+      <!-- <h1 class="text-6xl p-10 text-center">首頁/目錄</h1> -->
+      <!-- <p>本專案(應該會)使用 Vue3、Vite、Nuxt、TypeScript、tailwind、JavaScript、CSS、HTML</p> -->
+      <!-- <Breadcrumb /> -->
       <NuxtPage />
     </NuxtLayout>
 <!--     <div>

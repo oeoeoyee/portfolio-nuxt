@@ -6,31 +6,11 @@
         <p ref="testTxt">測試文字</p> -->
         <section class="border border-myColor-borderGery bg-white w-5/6 p-4">
             <div class="h-24 m-auto flex items-center border-b border-myColor-borderGery">
-                <h2 class="text-3.5xl font-bold">有關我</h2>
-            </div>
-            <div class="m-auto flex-wrap items-center mt-4">
-                <h3 class="text-2.5xl w-full font-bold">
-                    許懷文
-                    <br>
-                    HSU HUAI-WEN
-                </h3>
-                <p class="text-xl w-full mt-4">前端工程師</p>
-                <!-- <Header></Header> -->
-                <SkillSection 
-                    :skillArrayAll="skillArrayAll" 
-                    :test="test" 
-                    :testObj="testPorpsObj"
-                    @clickSkillName="emitSkillName"
-                    @clickSkillItem="emitSkillItem"
-                ></SkillSection>
-            </div>
-        </section>
-        <section class="border border-myColor-borderGery bg-white w-5/6 p-4">
-            <div class="h-24 m-auto flex items-center border-b border-myColor-borderGery">
                 <h2 class="text-3.5xl font-bold">歷程</h2>
             </div>
             <div class="m-auto flex-wrap items-center mt-4">
                 <ExperienceSection></ExperienceSection>
+                <StudySection></StudySection>
             </div>
         </section>
         <!-- 會用到的集合:邊框樣式、section周邊留空、h1234字型 -->
@@ -41,19 +21,19 @@
 </template>
 
 <script setup>
-import experienceSection from "./experienceSection.vue"
+// import experienceSection from "./experienceSection.vue"
 
 const title = ref('')
-const skillArrayAll = ref([
-    {
-        skillName: '程式方面技能',
-        skillArr: ['HTML5', 'CSS3', 'JavaScript ES6', 'Vue3', 'Pinia', 'Vite']
-    },
-    {
-        skillName: '開發工具和技術',
-        skillArr: ['Git版控', 'API串接與開需求', 'Git版控', 'RWD響應式設計']
-    },
-])
+// const skillArrayAll = ref([
+//     {
+//         skillName: '程式方面技能',
+//         skillArr: ['HTML5', 'CSS3', 'JavaScript ES6', 'Vue3', 'Pinia', 'Vite']
+//     },
+//     {
+//         skillName: '開發工具和技術',
+//         skillArr: ['Git版控', 'API串接與開需求', 'Git版控', 'RWD響應式設計']
+//     },
+// ])
 
 const test = () => {
     console.log('test props')
@@ -63,13 +43,13 @@ const testPorpsObj = ref({
     str: '11122233'
 })
 
-const emitSkillName = (name) => {
-    console.log(name);
-}
+// const emitSkillName = (name) => {
+//     console.log(name);
+// }
 
-const emitSkillItem = (item) => {
-    console.log(item);
-}
+// const emitSkillItem = (item) => {
+//     console.log(item);
+// }
 
 // const codeSkillArray = ref(['HTML5', 'CSS3', 'JavaScript ES6', 'Vue3', 'Pinia', 'Vite'])
 // const toolSkillArray = ref(['Git版控', 'API串接與開需求', 'Git版控', 'RWD響應式設計'])

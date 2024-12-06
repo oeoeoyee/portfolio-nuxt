@@ -1,8 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePageMeta({
+  breadcrumb: [
+    {text: '學習歷程', href: '/'}
+  ]
+});
+</script>
 
 <template>
-  <div class="pb-20">
-    Page: index
+  <div class="py-20">
     <Section></Section>
   </div>
 </template>

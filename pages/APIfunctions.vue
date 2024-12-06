@@ -12,7 +12,6 @@ travelData.value = data.value;
 
 <template>
   <div>
-    Page: APIfunctions
     <ul>
       <li v-for="(item, index) in travelData" :key=index>{{ item }}</li>
     </ul>
