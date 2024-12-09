@@ -35,6 +35,8 @@ export default {
           ButtonYellow: '#FEEDAB',
           hoverYellow: '#EFE0A2',
           borderGery: '#808080',
+          darkMidGreen: '#4d7d78',
+          darkGreen: '#365955',
         }
       },
       maxHeight: {

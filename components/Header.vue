@@ -10,23 +10,23 @@ const path = computed(():string => {
 <template>
     <ul class="flex flex-row h-16"> 
         <NuxtLink 
-            :class="{'bg-myColor-hoverGreen': path === '/','bg-white': path !== '/'}"
-            class="flex-auto hover:bg-myColor-hoverGreen leading-16 text-center" 
+            class="flex-auto hover:bg-myColor-darkMidGreen hover:text-gray-100 leading-16 text-center transition duration-300 ease-in-out" 
+            :class="{'bg-myColor-darkGreen text-gray-100': path === '/','bg-white text-gray-700': path !== '/'}"
             to="/"
         >
-            <li>Index</li>
+            <li>有關我</li>
         </NuxtLink>
         <NuxtLink 
-            class="flex-auto hover:bg-myColor-hoverGreen leading-16 text-center" 
-            :class="{'bg-myColor-hoverGreen': path === '/about','bg-white': path !== '/about'}"
-            to="/about"
+            class="flex-auto hover:bg-myColor-darkMidGreen hover:text-gray-100 leading-16 text-center transition duration-300 ease-in-out" 
+            :class="{'bg-myColor-darkGreen text-gray-100': path === '/experience','bg-white text-gray-700': path !== '/experience'}"
+            to="/experience"
         >
-            <li>About Me</li>
+            <li>經歷</li>
         </NuxtLink>
-        <!-- <NuxtLink class="flex-auto hover:bg-myColor-hoverGreen leading-16 bg-white text-center" to="/APIfunctions"><li>api串接的小功能</li></NuxtLink> -->
+        <!-- <NuxtLink class="flex-auto hover:bg-myColor-darkMidGreen leading-16 bg-white text-center" to="/APIfunctions"><li>api串接的小功能</li></NuxtLink> -->
         <NuxtLink 
-            class="flex-auto hover:bg-myColor-hoverGreen leading-16 text-center" 
-            :class="{'bg-myColor-hoverGreen': path === '/projects','bg-white': path !== '/projects'}"
+            class="flex-auto hover:bg-myColor-darkMidGreen hover:text-gray-100 leading-16 text-center transition duration-300 ease-in-out" 
+            :class="{'bg-myColor-darkGreen text-gray-100': path === '/projects','bg-white text-gray-700': path !== '/projects'}"
             to="/projects"
         >
             <li>專案展示</li>

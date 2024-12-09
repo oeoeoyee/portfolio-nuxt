@@ -64,6 +64,7 @@ definePageMeta({
                   </div> -->
                   <a 
                     href="https://www.notion.so/b94511f482fd4d07b0f31e5bf7e2b59a?pvs=4"
+                    target="blank"
                     class="bg-myColor-ButtonGreen hover:bg-myColor-ButtonGreen text-gray-800 font-bold py-2 px-4 rounded leading-6 w-36" 
                   >
                    筆記整理及分享
@@ -79,6 +80,7 @@ definePageMeta({
                   </div> -->
                   <a 
                     href="https://ithelp.ithome.com.tw/users/20162572/ironman/6808"
+                    target="blank"
                     class="bg-myColor-ButtonGreen hover:bg-myColor-ButtonGreen text-gray-800 font-bold py-2 px-4 rounded leading-6 w-20" 
                   >
                    鐵人賽
