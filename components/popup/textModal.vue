@@ -5,7 +5,8 @@
     v-show="!popupHidden"
     id="modal"
     >
-    <div class="bg-white rounded-lg w-4/5 p-6">
+    <!-- w-full sm:w-4/5 p-6 max-h-screen sm:max-h-5/6 flex flex-col justify-between -->
+    <div class="bg-white rounded-lg w-11/12 sm:w-4/5 p-6 max-h-5/6 sm:max-h-4/6">
       <div class="flex justify-between items-center mb-2">
         <h2 class="text-xl font-semibold text-gray-800">{{ prop.data.title }}-{{ prop.data.job }}</h2>
         <button id="closeModal" @click="closeModel" class="text-gray-500 hover:text-gray-700">

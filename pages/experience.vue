@@ -7,7 +7,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="py-20">
+  <div class="py-20 md:py-10">
     <Section></Section>
   </div>
 </template>

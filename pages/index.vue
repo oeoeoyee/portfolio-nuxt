@@ -46,7 +46,7 @@ const emitSkillItem = (item: string): void => {
 </script>
 
 <template>
-  <div class="py-20 flex justify-center flex-wrap">
+  <div class="py-20 md:py-10 flex justify-center flex-wrap">
     <section class="border border-myColor-borderGery bg-white w-5/6 p-4">
         <div class="h-24 m-auto flex items-center border-b border-myColor-borderGery">
             <h2 class="text-3.5xl font-bold">有關我</h2>
