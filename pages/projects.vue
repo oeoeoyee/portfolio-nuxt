@@ -7,7 +7,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="flex justify-center flex-wrap py-20 md:py-10">
+  <div class="flex justify-center flex-wrap py-10 md:py-20">
     <!-- 這個跟首頁的東西有重複 -->
       <section class="border border-myColor-borderGery bg-white w-5/6 p-4">
         <div class="h-24 m-auto flex items-center border-b border-myColor-borderGery">
