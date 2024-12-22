@@ -15,7 +15,7 @@
                 </button>
                 <PopupTextModal :data=popupData :popupHidden="popupHidden" @popupHidden="emitPopupHidden">
                     <!-- <p class="mt-4 text-gray-600">這是一個使用 Tailwind CSS 實現的對話窗模組範例。你可以在這裡放任何內容，像是訊息、表單等。{{ popupData }}</p> -->
-                    <ul class="overflow-auto max-h-96 w-full px-3 min-h-[200px]">
+                    <ul class="overflow-auto w-full px-3 h-[300px] max-h-96 min-h-[200px]">
                         <li 
                             v-for="(item, index) in popupData.workContent" :key="index"
                             class="border-b border-myColor-borderGery py-4 flex flex-col gap-2">
@@ -36,7 +36,8 @@
 
 const popupHidden = ref(true)
 const popupData = ref({})
-const openTextModel = (jobID) =>{  
+const openTextModel = (jobID) =>{ 
+    console.log('test',jobID) 
     popupHidden.value = false
     popupData.value = experienceData.value[jobID]
 }
